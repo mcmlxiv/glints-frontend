@@ -138,7 +138,7 @@ const UserAccount = (props) => {
                   Delete User ☠️
                 </button>
               </div>
-              <div className={"w-80 lg:w-64 pt-2"}>
+              <div className={"w-52 lg:64 pt-2"}>
                 <p className={"italic  break-words self-center"}>
                   Tip: After editing your profile always{" "}
                   <span className={"font-bold"}>Save</span> and be careful any
@@ -151,7 +151,7 @@ const UserAccount = (props) => {
           <div className={"py-2 lg:py-0 w-full "}>
             <div className="flex flex-col items-center lg:items-start justify-center space-y-4">
               <div>
-                <p className={"text-lg font-bold "}>
+                <p className={"text-lg font-bold w-52 lg:w-full break-words "}>
                   Hey Stranger! 🙋‍♂️ What's your Story? 📖
                 </p>
               </div>

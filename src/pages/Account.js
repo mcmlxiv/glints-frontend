@@ -29,9 +29,9 @@ const Account = (props) => {
           onAddJob={jobAddHandler}
         />
         <div className="flex flex-col space-y-8 lg:space-y-12 items-center justify-center w-screen h-full ">
-          <section className="self-start w-full text-2xl px-4 md:px-20 py-6 flex  items-center justify-between shadow-md ">
-            <div className="flex ">
-              <div className="cursor-pointer flex">
+          <section className="self-start w-full text-base lg:text-2xl px-10 lg:px-4  md:px-20 py-6 flex  items-center justify-between shadow-md ">
+            <div className="flex  ">
+              <div className="cursor-pointer flex ">
                 AllHands <p className="px-2">🙌</p>
               </div>
             </div>
