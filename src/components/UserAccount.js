@@ -205,7 +205,11 @@ const UserAccount = (props) => {
                   Show Profile 🚀
                 </a>
                 <button
-                  onClick={() => copyToClipBoard("some text to copy")}
+                  onClick={() =>
+                    copyToClipBoard(
+                      `https://glints-mcmlxiv.vercel.app/person/${userId}`
+                    )
+                  }
                   className=" lg:w-52 w-28 h-16  flex justify-center  items-center  p-4 bg-indigo-400   hover:bg-yellow-500 rounded-lg font-bold text-white  shadow-md"
                 >
                   {copySuccess ? "Copied! 👍" : "Copy URL 📋"}
