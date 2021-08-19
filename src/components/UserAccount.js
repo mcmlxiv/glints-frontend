@@ -95,6 +95,7 @@ const UserAccount = (props) => {
       mounted = false;
     };
   }, [userLastName, userFirstName]);
+  const domain = window.location.host;
   const userProfileHandler = (e) => {
     e.preventDefault();
     userUpdateHandler(
@@ -205,11 +206,7 @@ const UserAccount = (props) => {
                   Show Profile 🚀
                 </a>
                 <button
-                  onClick={() =>
-                    copyToClipBoard(
-                      `https://glints-mcmlxiv.vercel.app/person/${userId}`
-                    )
-                  }
+                  onClick={() => copyToClipBoard(`${domain}/person/${userId}`)}
                   className=" lg:w-52 w-28 h-16  flex justify-center  items-center  p-4 bg-indigo-400   hover:bg-yellow-500 rounded-lg font-bold text-white  shadow-md"
                 >
                   {copySuccess ? "Copied! 👍" : "Copy URL 📋"}
