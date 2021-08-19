@@ -121,7 +121,7 @@ const UserAccount = (props) => {
               <div className={"flex items-center justify-center space-x-3"}>
                 <button
                   onClick={userProfileHandler}
-                  className="lg:w-52 w-28 h-20 lg:h-16  outline-none p-4 bg-blue-400 hover:bg-green-500 rounded-lg font-bold text-white lg:mt-14 mt-8 shadow-md"
+                  className="cursor-pointer lg:w-52 w-28 h-20 lg:h-16  outline-none p-4 bg-blue-400 hover:bg-green-500 rounded-lg font-bold text-white lg:mt-14 mt-8 shadow-md"
                 >
                   Save Info 💾
                 </button>
@@ -133,7 +133,7 @@ const UserAccount = (props) => {
                     handleLogouts,
                     logout
                   )}
-                  className="lg:w-52 w-28 h-20 lg:h-16 p-4 bg-red-500 hover:bg-black rounded-lg font-bold text-sm text-white lg:mt-14 mt-8 shadow-md"
+                  className="cursor-pointer lg:w-52 w-28 h-20 lg:h-16 p-4 bg-red-500 hover:bg-black rounded-lg font-bold text-sm text-white lg:mt-14 mt-8 shadow-md"
                 >
                   Delete User ☠️
                 </button>
@@ -193,7 +193,7 @@ const UserAccount = (props) => {
               <div className={"flex items-center space-x-4  "}>
                 <a
                   href={`person/${userId}`}
-                  className="  flex justify-center  items-center  p-4 bg-green-400 lg:w-52 w-28 h-16  hover:bg-blue-500 rounded-lg font-bold text-white shadow-md"
+                  className=" cursor-pointer flex justify-center  items-center  p-4 bg-green-400 lg:w-52 w-28 h-16  hover:bg-blue-500 rounded-lg font-bold text-white shadow-md"
                 >
                   Show Profile 🚀
                 </a>
@@ -202,7 +202,7 @@ const UserAccount = (props) => {
                     navigator.clipboard.writeText(`${domain}/person/${userId}`);
                     setCopySuccess("Copied!");
                   }}
-                  className=" lg:w-52 w-28 h-16  flex justify-center  items-center  p-4 bg-indigo-400   hover:bg-yellow-500 rounded-lg font-bold text-white  shadow-md"
+                  className="cursor-pointer  lg:w-52 w-28 h-16  flex justify-center  items-center  p-4 bg-indigo-400   hover:bg-yellow-500 rounded-lg font-bold text-white  shadow-md"
                 >
                   {copySuccess ? "Copied! 👍" : "Copy URL 📋"}
                 </button>
