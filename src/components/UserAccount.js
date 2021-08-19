@@ -29,14 +29,6 @@ const UserAccount = (props) => {
   const [showAgeInfo, setShowAgeInfo] = useState(true);
   const [copySuccess, setCopySuccess] = useState("");
 
-  const copyToClipBoard = async (e, copyMe) => {
-    try {
-      await navigator.clipboard.writeText(copyMe);
-      setCopySuccess("Copied!");
-    } catch (err) {
-      setCopySuccess("Failed to copy!");
-    }
-  };
   const matches = useMediaQuery("(min-width:1024px)");
   const handleEmailChange = () => {
     setShowEmailInfo(!showEmailInfo);
@@ -95,7 +87,7 @@ const UserAccount = (props) => {
       mounted = false;
     };
   }, [userLastName, userFirstName]);
-
+  const domain = window.location.host;
   const userProfileHandler = (e) => {
     e.preventDefault();
     userUpdateHandler(
@@ -206,11 +198,10 @@ const UserAccount = (props) => {
                   Show Profile 🚀
                 </a>
                 <button
-                  onClick={() =>
-                    copyToClipBoard(
-                      `https://glints-mcmlxiv.vercel.app/person/${userId}`
-                    )
-                  }
+                  onClick={() => {
+                    navigator.clipboard.writeText(`${domain}/person/${userId}`);
+                    setCopySuccess("Copied!");
+                  }}
                   className=" lg:w-52 w-28 h-16  flex justify-center  items-center  p-4 bg-indigo-400   hover:bg-yellow-500 rounded-lg font-bold text-white  shadow-md"
                 >
                   {copySuccess ? "Copied! 👍" : "Copy URL 📋"}
