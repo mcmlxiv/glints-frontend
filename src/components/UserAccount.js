@@ -138,7 +138,7 @@ const UserAccount = (props) => {
                   Delete User ☠️
                 </button>
               </div>
-              <div className={"w-52 lg:64 pt-2"}>
+              <div className={"w-52 lg:w-80 pt-2"}>
                 <p className={"italic  break-words self-center"}>
                   Tip: After editing your profile always{" "}
                   <span className={"font-bold"}>Save</span> and be careful any

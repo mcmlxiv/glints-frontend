@@ -80,7 +80,7 @@ const PersonPage = ({ userId }) => {
       <div className="shadow-inner  shadow-xl w-20 h-40 absolute bg-purple-300 rounded-full -top-10  transform -rotate-12 hidden md:block animate-pulse " />
       <div className="shadow-inner absolute w-48 h-48 rounded-xl bg-purple-300  right-12 transform rotate-12 hidden md:block  animate-pulse" />
       <div className="bg-white lg:p-20 flex justify-center items-center flex-col w-3/4 h-full space-y-8">
-        <h1 className="text-base lg:text-5xl text-black flex flex-1  sm:justify-center md:flex-row mt-4">
+        <h1 className="break-words w-56 text-xs lg:text-2xl text-black flex flex-1  sm:justify-center md:flex-row mt-4">
           This is {userFirstName}'s AllHands <p className="px-2">🙌</p> Profile
         </h1>
         <div
